@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
 }    
-#box1{
+#app-4{
     height: 100vh;
     width: 100%;
     background-image: url(fotosproject1/antelope.jpg);
@@ -26,12 +26,11 @@ body{
     display: table;
     background-attachment: fixed;
 }
-h1{
-    font-family: arial black;
-    font-size: 50px;
-    color:white;
-    margin: 0px;
+ul{
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    color:white;
+    font-size: 250%;
+    list-style: none;
 }
