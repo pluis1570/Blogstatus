@@ -15,3 +15,4 @@ after setting up, your workflow becomes:
     *commit your changes
     *push you commits
     
+    That's it for today
