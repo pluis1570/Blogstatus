@@ -30,7 +30,18 @@ ul{
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    color:white;
-    font-size: 250%;
+    color: white;
+    font-size: 120%;
     list-style: none;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 500%;
+    font-style: oblique;
+    text-decoration: underline;
+    color: white;
+    font-family: none;
+
+
+
 }
