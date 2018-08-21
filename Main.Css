@@ -5,7 +5,7 @@ body{
 #box1{
     height: 100vh;
     width: 100%;
-    background-image: url(antelope.jpg);
+    background-image: url(fotosproject1/antelope.jpg);
     background-size: cover;
     display: table;
     background-attachment: fixed;
@@ -13,7 +13,7 @@ body{
 #box2{
     height: 100vh;
     width: 100%;
-    background-image: url(sequoia.jpg);
+    background-image: url(fotosproject1/sequoia.jpg);
     background-size: cover;
     display: table;
     background-attachment: fixed;
@@ -21,7 +21,7 @@ body{
 #box3{
     height: 100vh;
     width: 100%;
-    background-image: url(balboapark.jpg);
+    background-image: url(fotosproject1/balboapark.jpg);
     background-size: cover;
     display: table;
     background-attachment: fixed;
