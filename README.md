@@ -14,4 +14,4 @@ after setting up, your workflow becomes:
     *makes your changes
     *commit your changes
     *push you commits
-    :alien:
+    
