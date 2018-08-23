@@ -2,6 +2,15 @@ body{
     margin: 0;
     padding: 0;
 }    
+
+#box1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(fotosproject1/about.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
 #app-4{
     height: 100vh;
     width: 100%;

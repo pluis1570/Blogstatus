@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Roadtrip Amerika</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Main.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
-    <script src="main.js"></script>
+    
 </head>
 <body>
         <!-- sidebar menu -->
 
     <div class="sidenav">
-        <a href="/klasprojectweek1.html">home</a>
+        <a href="klasprojectweek1.html">Services</a>
         <a href="/about.html">About</a>
        <li> <a href="#">Clients</a> </li>
           <ul>
@@ -30,38 +30,37 @@
 
 <!-- parallax box-->
 
-    <div id="app-4">
+    <div id="box1">
         <!--<h1>Antelope Canyon</h1>-->
         <ul>
             <li v-for="entry in list">
               <h1>
-                {{ entry.Name }}
+                {{ entry.title }}
               </h1>
-              <p>{{ entry.Category }}</p>
+              <p>{{ entry.text }}</p>
             </li>
           </ul>
     </div>
-    <div id="box2">
-        <!--<h1>Sequoia Park</h1>-->
-        <ul>
-            <li v-for="entry in list">
-              <h1>
-                {{ entry.Name2 }}
-              </h1>
-              <p>{{ entry.Category2 }}</p>
-            </li>
-          </ul>
-    </div>
-    <div id="box3">
-        <!--<h1>Balboa Park</h1>-->
-        <ul>
-            <li v-for="entry in list">
-              <h1>
-                {{ entry.Name3 }}
-              </h1>
-              <p>{{ entry.Category3 }}</p>
-            </li>
-          </ul>
-    </div>
-</body>
-</html>
+   
+<script>
+    function init() {
+  Tabletop.init({
+    key: 'https://docs.google.com/spreadsheets/d/1F2WY63mn_h5b0IRAKlDW6jMeLF85cfqtCOWJgELq_6Y/pubhtml',
+
+    callback: function (tabletopData, tabletop) {
+      console.log(tabletopData)
+ 
+      var box1 = new Vue({
+        el: '#box1',
+        data: {
+          list: tabletopData,
+        }
+      })
+      
+    },
+    simpleSheet: true
+  })
+ }
+ 
+ window.addEventListener('DOMContentLoaded', init)
+</script>
